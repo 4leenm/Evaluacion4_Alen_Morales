@@ -85,6 +85,12 @@ def mostrar_estudiantes(estudiantes):
     print("\n===  L I S T A  D E  E S T U D I A N T E S  ===")
     
     for estudiante in estudiantes:
+        
+        if estudiante[i]["Estado"] == True:
+            estado = "Disponible"
+        else:
+            estado = "Sin stock"
+
         print(f"\n========================================================== \nNombre: {estudiante["Nombre"]} \nEdad: {estudiante["Edad"]} \nNota: {estudiante["Nota"]} \nEstado: {estudiante["Estado"]} \n==========================================================")
 
 while True:
